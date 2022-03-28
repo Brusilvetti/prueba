@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+
+	<link rel="stylesheet" href="stylemobile.css">
+</head>
+
+<body>
+	
+	<header>
+	 	<nav id="botonera"> 
+			<a href="indexmobile.html">
+			<img src="img/logo.svg" alt="logo" class="encabezado__logo--m"> 
+			</a>
+			<ul>  <!-- BOTON HAMBURGUESA para versiones mas chicas -->
+			<li><a href="menumobile.html">Menu</a></li>
+			<li><a href="gatitosmobile.html">Gatitos</a></li>
+			<li><a href="reservasmobile.html">Reservas</a></li>
+			<li><a href="preguntasfrecuentesmobile.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactomobile.html">Contacto</a></li>
+			</ul>
+	 		</nav>
+
+	 		<div>
+		 		<p class="encabezado__box--white">Bartolomé Cerretti 1089, Adrogue - 11 4299-0929 </p>
+			</div>
+	</header>
+
+	<main>
+		<div class="container__info--flex">
+		<div class=textCenter>
+		      <h3 class="info__text--style"> Bartolomé Cerretti 1089, Adrogue </h3>
+		      <h3 class="info__text--style"> 11 4299-0929</h3>
+		      <h3 class="info__text--style"> CatCafeBru@gmail.com</h3>
+		      <img class="img__separador" src="img/contactoo.png" alt="gato con forma de corazon">
+		      <h3 class="info__horario--style">Horarios</h3>
+		      <p class="info__text--style">Martes a viernes 9:00 - 20:00 </p>
+		      <p class="info__text--style"> Domingos 8:00 - 18:00 </p>
+		      <a href="https://facebook.com" target="_blank"> <img src="img/facebook.png" alt="" class="pie__icon--s"></a>
+				<a href="https://twitter.com" target="_blank"> <img src="img/twitter.png" alt=""class="pie__icon--s"></a>
+				<a href="https://instagram.com" target="_blank"> <img src="img/instagram.png" alt=""class="pie__icon--s"></a>
+		  </div>
+
+		  <article>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.101290539863!2d-58.38613482701008!3d-34.80084487396121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3465ac40d51%3A0xd5c48e2ec55069c!2sBartolom%C3%A9%20Cerretti%201089%2C%20B1846CEG%20Adrogu%C3%A9%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1645979682015!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		  </article>
+
+           <div class="container__contacto--flex">
+
+           		<img src="img/gatitocontacto.jpg" alt="Gato con un telefono" class="img__contacto">
+
+		     	<form action="contacto.php" method="post" class="form__contacto">
+
+			  		<label for="nombre y apellido">Nombre y apellido</label>
+			  		<input type="text" placeholder="Nombre Apellido" name="nombre y apellido"id="nombre y apellido"> 
+			  		<label for="telefono">Telefono</label>
+			  		<input type="text" placeholder="11 2345-6789" name="telefono" id="telefono">
+
+			  		<label for="email">E-mail</label>
+			  		<input type="text" placeholder="ejemplo@email.com" name="email" id="email">
+
+			  		<label for="mensaje">Mensaje</label>
+			  		<textarea> </textarea>
+
+			  		<input type="reset">
+			  		<input type="submit">
+
+		      	</form> 
+          	</div>
+          	</div>
+
+	</main>
+
+	<footer id="pie" class="footer__style">
+			<div>
+				<div> Bartolomé Cerretti 1089, Adrogue </div>
+				<div> 11 4299-0929</div>
+			</div>
+	</footer>
+	
+</body>
+</html>

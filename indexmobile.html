@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cat Cafe</title>
+
+	<link target='_blank' href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="stylemobile.css">
+</head>
+
+<body class="grid">
+
+	<header>
+	 	<nav id="botonera"> 
+			<a href="indexmobile.html">
+			<img src="img/logo.svg" alt="logo" class="encabezado__logo--m"> 
+			</a>
+			<ul>  <!-- BOTON HAMBURGUESA para versiones mas chicas -->
+			<li><a href="menumobile.html">Menu</a></li>
+			<li><a href="gatitosmobile.html">Gatitos</a></li>
+			<li><a href="reservasmobile.html">Reservas</a></li>
+			<li><a href="preguntasfrecuentesmobile.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactomobile.html">Contacto</a></li>
+			</ul>
+	 		</nav>
+
+	 		<div>
+		 		<p class="encabezado__box--white">Bartolomé Cerretti 1089, Adrogue - 11 4299-0929 </p>
+			</div>
+	</header>
+
+	<main id="main"class="grid_main">
+		
+		<!--Empieza el carousel de fotos-->
+
+		<div id="imgprincipal">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> 
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="img/car2.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/car3.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/car4.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+		</div>
+
+		<!-- termina carousel -->
+
+		<div class=BgVioleta id="nostrosindex">
+			<h1 class="main__titulo"> Sobre Nosotros</h1> 
+			<p class="text__index">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</p>
+		</div>
+
+		<img src="img/menuindex.jpg" alt="" class="main__img--fluid" id="imgmenu">
+
+		<div class=BgRosa id="menuindex">
+			<h1 class="main__titulo"> <a href="menumobile.html"> Menú </a> </h1> 
+			<p class="text__index">Descubrí nuestro menú</p>
+		</div>
+
+		<img src="img/gatitosindex.jpg" alt="" class="main__img--fluid" id="imggatitos">
+
+		<div class=BgVioleta id="gatitosindex">
+			<h1 class="main__titulo"> <a href="menu.html"> Gatitos </a> </h1> 
+			<p class="text__index">Conocé a todos los gatitos que podes encontraren nuestro Cat Café</p>
+		</div>
+
+		<img src="img/reservaindex.jpg" alt="" class="main__img--fluid" id="imgreserva">
+
+		<div class=BgRosa id="reservasindex">
+			<h1 class="main__titulo"> <a href="menu.html"> Reservas </a> </h1> 
+			<p class="text__index">Hacé tu reserva de manera online</p>
+		</div>
+
+	<div class="display__flex--index" id="cont-pre">
+			<h1 class="main__titulo BgVioleta"> <a href="menu.html"> Contactanos </a> </h1> 
+			<h1 class="main__titulo BgVioleta"> <a href="menu.html"> Preguntas Frecuentes </a> </h1> 
+	</div>
+
+
+	</main>
+
+		<footer id="pie" class="footer__style">
+			<div>
+				<div> Bartolomé Cerretti 1089, Adrogue </div>
+				<div> 11 4299-0929</div>
+			</div>
+
+		<!-- <div class="pie_redes">
+			<a href="https://facebook.com" target="_blank"> <img src="img/facebook.png" alt="" class="pie__icon--s"></a>
+			<a href="https://twitter.com" target="_blank"> <img src="img/twitfter.png" alt=""class="pie__icon--s"></a>
+			</div>  NOSE SI PONER ESTO TODAVIA -->
+	</footer>
+</body>
+</html>

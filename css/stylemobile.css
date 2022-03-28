@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Josefin+Sans:wght@300;400&family=Jua&family=Rufina:wght@400;700&family=Urbanist:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Rufina:wght@400;700&display=swap');
+
+html{
+	font-size: 62,5%;
+}
+*{
+	font-family:'Josefin Sans', sans-serif ;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #DBB3B4;
+	overflow: auto;
+}
+
+.textCenter{
+	text-align: center;
+}
+/*estructura grid */
+.grid{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-template-rows:auto;
+	grid-template-areas:"botonera" "main" "pie";
+}
+
+#botonera{
+	grid-area: botonera; 
+}
+
+
+#main{
+	grid-area: main;
+}
+
+#pie{
+	grid-area: pie;
+}
+
+
+/*botonera empieza*/
+
+.encabezado__logo--m{
+	height: 10rem;
+	}
+
+ nav{
+	background-color: #F2CAB3;
+	width: 100%; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul{
+	visibility: hidden;
+}
+
+.encabezado__box--white {
+	text-align: center;
+	width: 100%;
+	text-align: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	display: none;
+ }
+/*botonera termina*/
+
+/*empieza main*/
+
+@keyframes animateIndex{
+	0%{background-image: url(img/car2.jpg);}
+	25%{background-image: url(img/car3.jpg);}
+	50%{background-image: url(img/car4.jpg);}
+	75%{background-image: url(img/car5.jpg);}
+	100%{background-image: url(img/car2.jpg);}
+}
+
+#imgprincipal{
+	background-image: url(img/car2.jpg);
+	animation-name: animateIndex;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-timing-function: ease;
+	background-size: cover;
+}
+
+.main__img--fluid{
+	width: 100%;
+}
+
+.main__titulo{
+	color: #B38781;
+	text-align: center;
+	font-family: 'Rufina', serif;
+	font-weight: 700;
+	font-size:1.5rem ;
+}
+
+.main__titulo a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Rufina', serif;
+	font-weight: 700;
+	color: #B38781;
+}
+
+
+.main__titulo a:hover{
+	color: black ;
+}
+
+.text__index{
+	text-align: center;
+}
+
+p {
+	color: #717874;
+	margin: 0.3rem;
+	overflow: hidden;
+}
+
+.BgVioleta{
+	background-color: #F2CAB3;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	width: 100%;
+}
+
+.BgRosa{
+	background-color: #A3775C;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	width: 100%;
+
+}
+#cont-pre a{
+	font-size: 1.3rem;
+}
+
+
+/*termina main*/
+
+/*empieza footer*/
+
+.footer__style{
+	background-color: rgba(255, 215, 210, 0.5);
+	width: 100%; 
+	font-size: 1.2rem;
+	font-weight: 300;
+	text-align: center;
+	text-decoration: none; 
+	padding bottom: 0.5rem;
+	border: solid 1px #FFEEEB;
+	position: sticky;
+	padding-top: 0.3rem;
+	}
+
+.pie_redes{
+	visibility: hidden;
+}
+
+/*Empieza menú*/	
+
+.grid-menu{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 0.2rem;
+	grid-template-areas: 
+	"salado" "salados" "dulce" "dulces"
+	"panqueque" "panqueques" "bebida"
+	"bebidas" "combo" "combos" 
+	"especial" "especiales"
+}
+
+#salado{
+	grid-area: salado;
+}
+#dulce{
+	grid-area: dulce;
+}
+#salados{
+	grid-area: salados;
+}
+#dulces{
+	grid-area: dulces;
+}
+#panqueque{
+	grid-area: panqueque;
+}
+#bebida{
+	grid-area: bebida;
+}
+#panqueques{
+	grid-area: panqueques;
+}
+#bebidas{
+	grid-area: bebidas;
+}
+#combo{
+	grid-area: combo;
+}
+#especial{
+	grid-area: especial;
+}
+#combos{
+	grid-area: combos;
+}
+#especiales{
+	grid-area: especiales;
+}
+
+
+.menu__titulos--style{
+	color: #545856;
+	font-family: 'Josefin Sans', sans-serif ;
+	font-size: 1.5rem;
+	padding: 0rem;
+	margin: 0.2rem;
+	text-align: center;
+}
+
+.menu__items--style{
+	color: #717874 ;
+	font-size: 1rem;
+	padding: 0.1rem;
+	margin: 0.1rem;
+	text-align: center;
+}
+/*termina menu*/
+
+/*empieza gatitos*/
+
+figure img {
+	width: 20rem;
+}
+figcaption {
+	font-size: 2rem;
+	font-weight: 400;
+	padding: 0.3rem;
+	margin: 0.3rem 0.3rem;
+	color: #545856;
+	text-align: center;
+}
+.figure__datos{
+	font-size: 1.1rem;
+	color: #717874;
+	padding: 0.3rem;
+	margin: 0.3rem 0.3rem;
+	text-align: center;
+}
+
+.grid-gatitos{
+	display: grid;
+	width: 99%;
+	grid-template-columns: repeat(1, 1fr);
+	justify-items: center;
+	align-items: center;
+	justify-content: space-evenly;
+}
+/*termina gatitos*/
+
+/*empieza resevas*/
+
+.reservas__grid{
+	display: grid;
+	width: 99%;
+	grid-template-columns:auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"reservasinfo"
+	"reservas"
+	"aside"
+}
+#aside{
+	display: none;
+}
+#reservasinfo{
+	grid-area: reservasinfo;
+}
+
+#reservas{
+	grid-area: reservas;
+}
+#aside{
+	grid-area: aside;
+}
+#dpersonales{
+	grid-area: dpersonales;
+}
+#dreserva{
+	grid-area: dreserva;
+}
+
+#reservas{
+	color: #717874;
+	background-color: rgba(270, 270, 270, 0.5);
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+fieldset{
+	padding: 0.3rem;
+	margin: 0.5rem;
+}
+/*termina reservas*/ 
+
+/*empieza contacto*/ 
+
+.info__text--style{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #717874;
+	margin: 10px ;
+}
+.img__separador{
+	width: 5rem;
+}
+.img__contacto{
+	width: 100%;
+}
+.form__contacto{
+	width: 100%;
+}
+
+iframe{
+	width: 100%;
+}
+/*termina contacto*/
+
+/*empieza preguntas frecuentes*/
+
+.img__preguntas{
+	width: 100%;
+}
+
+.preguntas__text--style{
+	font-size: 1.5rem;
+	color: #717874;
+	font-family:  'Rufina', serif;
+	font-weight: 700;
+	margin-top: 2rem;
+	margin-bottom: 0.3rem;
+	margin-left: 0.5rem;
+}
+
+.preguntas__respuesta--style{
+	font-size: 1rem;
+	color: #717874;
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0.5rem;
+}
+
+/*Responsive*/
+
+@media (min-width: 768px){
+	
+.grid_main{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: "imgpri imgpri" "nosindex nosindex" 
+	"imgmenu menuindex" "gatindex imggat" 
+	"imgreservas reservasindex" "extraindex extraindex" 
+}	
+
+.main__titulo{
+	font-size: 2rem;
+}
+#cont-pre a{
+	font-size: 1.8rem;
+}
+
+#imgprincipal{
+	grid-area: imgpri;
+	width: 100%;
+	height: 20rem;
+}
+#nostrosindex{
+	grid-area:nosindex ;
+}
+#imgmenu{
+	grid-area: imgmenu;
+}
+#menuindex{
+	grid-area: menuindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#imggatitos{
+	grid-area: imggat;
+}
+#gatitosindex{
+	grid-area: gatindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#imgreservas{
+	grid-area: imgreservas;
+}
+#reservasindex{
+	grid-area: reservasindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#cont-pre{
+	grid-area: extraindex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.encabezado__box--white {
+	display: inline-block;
+ }
+
+ .grid-menu{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 0.2rem;
+	grid-template-areas: 
+	"salado dulce"
+	"salados dulces"
+	"panqueque bebida"
+	"panqueques bebidas"
+	"combo especial"
+	"combos especiales"
+}
+.grid-gatitos{
+	grid-template-columns: repeat(2, 1fr);
+ }
+
+.container__info--flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+}
+
+.container__contacto--flex{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+.img__contacto{
+	width: 50%;
+}
+.form__contacto{
+	width: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: #545856;
+}
+
+
+@media (min-width: 1024px){
+
+nav ul{
+	list-style-type: none;
+	display: inline-block;
+	margin: 1rem;
+	visibility: visible;
+ 	}
+
+nav ul li {
+ 	display: inline-block;
+ 	margin: 1rem 1rem;
+ 	padding: 0.5rem;
+ 	vertical-align: middle;
+	}
+ 
+nav ul li a{
+ 	text-decoration: none;
+ 	color: #7F5633;
+ 	font-family: 'Jua', sans-serif;
+ 	text-transform: uppercase;
+ 	font-size: 1.5rem;
+ 	margin: 0.2rem; 
+ 	}
+
+ nav ul li a:hover{
+ 	color: #E14E42;
+ }
+
+ .grid-menu{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 0.2rem;
+	grid-template-areas: 
+	"salado dulce panqueque"
+	"salados dulces panqueques"
+	"bebida combo especial"
+	"bebidas combos especiales"
+}
+
+.grid-gatitos{
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.reservas__grid{
+	display: grid;
+	width: 99%;
+	grid-template-columns: 80vw 20vw;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"reservasinfo aside"
+	"reservas aside"
+ }
+#aside{
+	display: inline-block;
+}
+}
+
+/*Animaciones*/

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reservas</title>
+
+	<link rel="stylesheet" href="stylemobile.css">
+</head>
+
+<body>
+
+	<header id="botonera">
+	 	<nav> 
+			<a href="indexmobile.html">
+			<img src="img/logo.svg" alt="logo" class="encabezado__logo--m"> 
+			</a>
+			<ul>
+			<li><a href="menumobile.html">Menu</a></li>
+			<li><a href="gatitosmobile.html">Gatitos</a></li>
+			<li><a href="reservasmobile.html">Reservas</a></li>
+			<li><a href="preguntasfrecuentesmobile.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactomobile.html">Contacto</a></li>
+			</ul>
+	 		</nav>
+	 	<div>
+		 <p class="encabezado__box--white">Bartolomé Cerretti 1089, Adrogue</p>
+		</div>
+	</header>
+
+<main class="reservas__grid">
+	<div id="reservainfo">		
+			<h1 class="main__titulo"> Hace tu reserva</h1>
+			<p class="textCenter"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c</p>
+		</div>	
+
+		<form action="reservas.php" method="post" id="reservas">
+			<legend>Completa tus datos</legend>
+			
+			<div id="dpersonales">
+			<fieldset>
+			<label for="nombre">Nombre</label>
+			<input type="text" placeholder="Nombre" name="nombre" id="nombre">
+			</fieldset>
+			
+			<fieldset>
+			<label for="apellido">Apellido</label>
+			<input type="text" placeholder="Apellido" name="apellido" id="apellido">
+			</fieldset>
+			
+			<fieldset>
+				<label for="telefono">Teléfono</label>
+				<input type="text" placeholder="11 2345-6789">
+			</fieldset>
+			
+			<fieldset>
+				<label for="mail">E-mail</label>
+				<input type="email" placeholder="ejemplo@mail.com">
+			</fieldset>
+			</div>
+			<div id="dreserva">
+			<fieldset>
+			<label for="dia">Dia</label>
+			<select name="dia" id="dia">
+				<option value="domingo">Proximo domingo</option>
+				<option value="martes">Proximo martes</option>	
+				<option value="miercoles">Proximo miercoles</option>
+				<option value="jueves">Proximo jueves</option>
+				<option value="viernes">Proximo viernes</option>
+				<option value="sabado">Proximo sabado</option>
+			</select>
+			</fieldset>
+			
+
+			<fieldset>
+				<legend>Elegi tu horario</legend>
+				
+				<input type="radio" name="horario" id="10" value="10">
+				<label for="10">10.00</label>
+				
+				<input type="radio" name="horario" id="12" value="12">
+				<label for="12">12.00</label>
+				
+				<input type="radio" name="horario" id="14" value="14">
+				<label for="14">14.00</label>
+
+				<input type="radio" name="horario" id="16" value="16">
+				<label for="16">16.00</label>
+
+				<input type="radio" name="horario" id="18" value="18">
+				<label for="18">18.00</label>
+			</fieldset>
+			
+
+			<fieldset>
+				<legend>Cantidad de personas</legend>
+
+				<select name="cantidad" id="cantidad">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</fieldset>
+			</div>
+
+			<input type="submit">
+
+	 </form>
+
+	 <aside id="aside">
+		<img src="img/covid.jpg" alt="infografia sobre el uso del barbijo" class="img__aside--style">
+	</aside>
+
+</main>
+
+	<footer id="pie" class="footer__style">
+		<div>
+			<div> Bartolomé Cerretti 1089, Adrogue </div>
+			<div> 11 4299-0929</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
